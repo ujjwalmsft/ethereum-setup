@@ -1,8 +1,8 @@
 // Define which compiler to use
-// Will only work with compilers >= the given version [1]
+// Will only work with compilers >= the given version
 pragma solidity 0.4.9;
 
-// Will only work version >= the given version and < the next major release (e.g. 0.5.0) [1]
+// Will only work version >= the given version and < the next major release (e.g. 0.5.0)
 // pragma solidity ^0.4.9;
 
 // Import other contracts
