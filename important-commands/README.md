@@ -29,6 +29,9 @@
     *   `eth.getTransaction('txHash')`
     *   `eth.getTransactionReceipt('txHash')`
 
+### Contract handling
+*   See binary code of a deployed contract
+    *   `eth.getCode(contractName.address)`
 
 ### Mist
 *   Connect to a running local node 
