@@ -60,7 +60,7 @@
 *  Create an account
     *  Console: `personal.newAccount()`
 
-## Connect the nodes (the number of node to connect to must be >= 1)
+## Connect the nodes (the number of nodes to connect to must be >= 1)
 *  Get the node information of all existing nodes
     *   Go to each node, open the console and run
         *   `admin.nodeInfo.enode`
