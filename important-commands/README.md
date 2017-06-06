@@ -3,6 +3,14 @@
 
 ## Ethereum related
 
+### Check connectivity
+*   Check if the node is listening [1]
+    *   `net.listening`
+*   Show number of peers [1]
+    *   `net.PeerCount`
+*   Get more information about connected peers [1]
+    *   `admin.peers`
+
 ### Account Handling
 *   List accounts on the node: 
     *   `eth.accounts`
@@ -21,6 +29,7 @@
     *   `eth.getTransaction('txHash')`
     *   `eth.getTransactionReceipt('txHash')`
 
+
 ### Mist
 *   Connect to a running local node 
     *   `mist.exe --rpc \\.\pipe\geth.ipc`
@@ -34,5 +43,8 @@
 *   See the running processes
     *   `ps -aux`
 *   Get the pid of the process
-*   See the output via `tail -f /proc/<pid>/fd/1` [7]
+*   See the output via `tail -f /proc/<pid>/fd/1`
 
+
+# Sources
+1.  [Connecting to the network](https://github.com/ethereum/go-ethereum/wiki/Connecting-to-the-network)

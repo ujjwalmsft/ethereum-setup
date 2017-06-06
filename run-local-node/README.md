@@ -10,22 +10,28 @@
     *   Initialize geth via `geth --datadir pathToGethFolder\geth\data init pathToGethFolder\geth\genesis.json`
     *   Start geth
         *   `geth --datadir pathToGethFolder\data`
-    *   Create a account (coinbase)
+    *   Create an account (coinbase)
     *   Start mining
         *   Option 1: 
             *   Open a second command line window
-                *   Connect to the running node via `geth attach ipc:///home/.../.dataFolderName/geth.ipc`
+                *   Connect to the running node via `geth attach ipc:\\.\pipe\geth.ipc`
                 *   Set coinbase via `miner.setEtherbase(eth.accounts[0])`
                 *   Run `miner.start(numberOfThreads)` [5]
         *   Option 2:
             *   Open a second command line window
             *   Run `geth --etherbase indexForCoinbaseAccount --mine --minerthreads=numberOfThreads  2>> geth.log`
 
-## Run a local node connected to the public network
+## Run a local node connected to the public network (Public)
+*   Download and install Geth [4]
+*   Run `geth`
 
+## Run a local node connected to the test network (Ropsten)
+*   Download and install Geth [4]
+*   Run `geth --testnet`
 
-## Run a local node connected to the test network
-
+## Run a local node connected to the dev network (Developer)
+*   Download and install Geth [4]
+*   Run `geth --dev`
 
 ## Run a local node connected to a custom public network in Azure
 *   Create a custom public Blockchain instance              
@@ -43,7 +49,7 @@
     *   Start geth
         *   `geth --datadir pathToGethFolder\data --networkid {network id}`
     *   Open a second command line window and test
-        *   Via `geth attach ipc:///home/.../.dataFolderName/geth.ipc`
+        *   Via `geth attach`
         *   It can take a few minutes
 
 ## Run a local node connected to a template-based private network in Azure
@@ -73,12 +79,12 @@
     *   Start geth
         *   `geth --datadir pathToGethFolder\data --networkid {network id}`
     *   Open a second command line window and test
-        *   Via `geth attach ipc:///home/.../.dataFolderName/geth.ipc`
+        *   Via `geth attach ipc:\\.\pipe\geth.ipc`
         *   It can take a few minutes
 
 ## Connect to a running local node of a private / custom public network
 *   Via command line
-    *   `geth attach ipc:///home/.../.dataFolderName/geth.ipc`
+    *   `geth attach ipc:\\.\pipe\geth.ipc`
 *   Via Mist
     *   Get and install Mist (version 0.8.10 does not seem to work properly, therefore use 0.8.9) [1]
     *   Run Mist while connected to the local node and therefore with the consortium
