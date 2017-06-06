@@ -12,16 +12,16 @@
 
 ## Deploy a Smart Contract
 ### Via Command Line
-*   Install the compiler on Ubuntu [11]
+*   Install the compiler on Ubuntu
 ```
 sudo add-apt-repository ppa:ethereum/ethereum
 sudo apt-get update
 sudo apt-get install solc
 which solc
 ```
-*   Check if the compiler is available [11]
+*   Check if the compiler is available
     *   `eth.getCompilers()`
-*   Compile the contract [11]
+*   Compile the contract
 ```
 var contractCode = 'contract ...';
 var compiledCode = web3.eth.compile.solidity(contractCode);
