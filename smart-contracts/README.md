@@ -60,7 +60,7 @@ var contractDeployment = contract.new(_initVariable,{from:web3.eth.accounts[0], 
 *   Important: Increase maximum fee to be provided (e.g. x 10). The provided amount is usually not enough.
 
 
-## Run function via command line
+## Run functions via command line
 ### Get the contract
 *   You need
     *   The address of the contract
@@ -71,3 +71,4 @@ var contractDeployment = contract.new(_initVariable,{from:web3.eth.accounts[0], 
     *   `var contract = eth.contract(abi).at(address);`
 
 ### Run functions
+...
