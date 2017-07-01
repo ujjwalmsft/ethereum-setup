@@ -69,9 +69,7 @@ IgnoreSP=TRUE
         *   -F : use mining pool
 
 *   To see the output of the process
-    *   See output via
-            *   Get pid -> `ps aux`
-            *   See output via -> `tail -f /proc/<pid>/fd/1`
+    *   See output via -> get PID via `ps aux` -> see output via `tail -f /proc/<pid>/fd/1`
 
 
 # Resources
