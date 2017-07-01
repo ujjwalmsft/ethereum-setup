@@ -48,6 +48,18 @@
 *   Get the pid of the process
 *   See the output via `tail -f /proc/<pid>/fd/1`
 
+### List, install and remove packages
+*   List installed packages
+    *   `apt list --installed`
+*   Install package
+    *   `sudo apt-get install`
+*   Uninstall package
+    *   `sudo apt-get purge`
+
+### Delete files and directories
+*   Delete a folder recursively
+    *   `rm -rf <directoryPath>`
+
 
 # Sources
 1.  [Connecting to the network](https://github.com/ethereum/go-ethereum/wiki/Connecting-to-the-network)
