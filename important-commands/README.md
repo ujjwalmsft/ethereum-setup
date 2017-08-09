@@ -44,7 +44,7 @@
 
 ### Display the output of a process running in the background on a Linux machine
 *   See the running processes
-    *   `ps -aux`
+    *   `ps -aux | grep geth`
 *   Get the pid of the process
 *   See the output via `tail -f /proc/<pid>/fd/1`
 
